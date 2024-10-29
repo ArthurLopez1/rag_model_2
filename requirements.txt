@@ -1,0 +1,17 @@
+langchain
+langchain-community
+llama-parse
+chromadb
+python-dotenv
+chainlit
+fastembed
+langchain-ollama
+streamlit
+ollama
+pdfplumber 
+langchain-core
+langchain_text_splitters
+unstructured
+unstructured[md]
+unstructured[all-docs]
+onnx==1.17.0
