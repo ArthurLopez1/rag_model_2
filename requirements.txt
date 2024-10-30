@@ -1,14 +1,15 @@
 langchain
 langchain-community
 llama-parse
+langchain-nomic
+langchain-ollama
+scikit-learn
 chromadb
 python-dotenv
 chainlit
 fastembed
-langchain-ollama
 streamlit
 ollama
-pdfplumber 
 langchain-core
 langchain_text_splitters
 unstructured
