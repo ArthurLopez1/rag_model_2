@@ -2,7 +2,7 @@
 import os
 import faiss
 import numpy as np
-from backend.models import HFModel
+from backend.models.llm_models import HFModel
 from backend.utils.pdf_parser import parse_pdf_with_pypdf
 from backend.config.settings import Config
 

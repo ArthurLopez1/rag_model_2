@@ -1,12 +1,12 @@
 # streamlit_app.py
 import streamlit as st
 from backend.config.settings import Config
-from backend.models import LLMModel
+from backend.models.llm_models import HFModel   
 from backend.vectorstore.vectorstore_manager import VectorStoreManager
-from backend.edges import get_router_prompt
-from backend.edges import get_rag_prompt
-from backend.edges import get_retrieval_grader_prompt
-from backend.edges import get_hallucination_grader_prompt
+from backend.edges.router import get_router_prompt
+from backend.edges.router import get_rag_prompt
+from backend.edges.router import get_retrieval_grader_prompt
+from backend.edges.router import get_hallucination_grader_prompt
 
 # Initialize environment and settings
 Config.initialize()

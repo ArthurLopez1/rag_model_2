@@ -1,13 +1,16 @@
+import os
+print(os.getcwd())
+
 # training/evaluator.py
-from backend.models import LLMModel
-from backend.vectorstore.vectorstore_manager import VectorStoreManager
-from backend.edges import get_rag_prompt
-from backend.edges import get_retrieval_grader_prompt
-from backend.edges import get_hallucination_grader_prompt
+from backend.models.llm_models import HFModel 
+from vectorstore.vectorstore_manager import VectorStoreManager
+from edges import get_rag_prompt
+from edges import get_retrieval_grader_prompt
+from edges import get_hallucination_grader_prompt
 
 class Evaluator:
     def __init__(self):
-        self.llm = LLMModel()
+        self.llm = HFModel()
         self.vectorstore_manager = VectorStoreManager()
 
     def test_query(self, question):
